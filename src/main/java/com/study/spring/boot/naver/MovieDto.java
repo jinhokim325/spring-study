@@ -1,0 +1,13 @@
+package com.study.spring.boot.naver;
+
+import lombok.Builder;
+import lombok.Getter;
+
+@Builder
+@Getter
+public class MovieDto {
+    private String title;
+    private String link;
+    private String director;
+    private float userRating;
+}

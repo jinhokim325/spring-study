@@ -1,17 +1,17 @@
 package com.study.spring.boot.naver;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@AllArgsConstructor
 @RequestMapping("/api")
 @RestController
 public class MovieController {
-    @Autowired
     private MovieService movieService;
 
     @GetMapping("/movie")

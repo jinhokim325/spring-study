@@ -9,5 +9,6 @@ public class MovieDto {
     private String title;
     private String link;
     private String director;
+    private String actor;
     private float userRating;
 }

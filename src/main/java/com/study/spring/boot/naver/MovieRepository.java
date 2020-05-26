@@ -8,8 +8,8 @@ import org.springframework.web.client.RestTemplate;
 
 @Repository
 public class MovieRepository {
-    private String clientId = "PpIdE0YtU9uioLdU2yKW";
-    private String clientSecret = "MdH0Dn0Bk0";
+    private String clientId = "";
+    private String clientSecret = "";
 
     public MovieResponseDto findByKeyword(String keyword) {
         RestTemplate restTemplate = new RestTemplate();

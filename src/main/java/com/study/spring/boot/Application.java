@@ -8,10 +8,5 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
 
-        /*
-        * String clientId = "PpIdE0YtU9uioLdU2yKW";
-        * String clientSecret = "MdH0Dn0Bk0";
-        * String url = "https://openapi.naver.com/v1/search/movie.json?query=";
-        * */
     }
 }

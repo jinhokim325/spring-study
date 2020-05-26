@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class MovieRepository {
     private String clientId = "";
     private String clientSecret = "";
+    private String apiUrl = "https://openapi.naver.com/v1/search/movie.json?query=";
 
     public MovieResponseDto findByKeyword(String keyword) {
         RestTemplate restTemplate = new RestTemplate();
@@ -17,7 +18,7 @@ public class MovieRepository {
         httpHeaders.add("X-Naver-Client-Id", clientId);
         httpHeaders.add("X-Naver-Client-Secret", clientSecret);
         HttpEntity<String> httpEntity = new HttpEntity<>(httpHeaders);
-        String url = "https://openapi.naver.com/v1/search/movie.json?query=" + keyword;
+        String url = apiUrl + keyword;
 
         return restTemplate.exchange(url, HttpMethod.GET, httpEntity, MovieResponseDto.class).getBody();
     }

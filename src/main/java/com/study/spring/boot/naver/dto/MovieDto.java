@@ -1,4 +1,4 @@
-package com.study.spring.boot.naver;
+package com.study.spring.boot.naver.dto;
 
 import lombok.Builder;
 import lombok.Getter;

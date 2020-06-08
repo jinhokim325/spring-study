@@ -1,15 +1,20 @@
-package com.study.spring.boot.naver;
+package com.study.spring.boot.naver.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 public class MovieResponseDto {
     private List<Item> items;
 
+    @AllArgsConstructor
+    @NoArgsConstructor
     @Getter
     public static class Item {
         String title;
